@@ -1,0 +1,99 @@
+.div-Content-Buttons{
+    display: flex;
+    margin: 10px;
+    height: 130px;
+}
+
+.div-Content-Buttons div{
+    margin: 5px;
+    color: white;
+    background-color:#3F51B5;
+    width: 18% ;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+
+    display: flex;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: #1E2757 ;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+/*No copiar si se va a usar Button Text*/
+button:active {
+    transform: scale(0.9); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
+}
+
+button:active,
+button:focus,
+button:hover{
+    background-color: #3b457d;
+    border: none;
+}
+
+i{
+    color:white;
+}
+
+
+span{
+    color:white;
+    font-size: 15px;
+}
+
+/*Text Button*/
+.NormalButton{
+    background-color:#3F51B5;
+}
+
+.NormalButton span:hover,
+.NormalButton span:active{
+    color:midnightblue;
+}
+
+.NormalButton:hover,
+.NormalButton:focus,
+.NormalButton:active{
+    background-color:#3F51B5;
+}
+
+/*Button whith icon*/
+.ButtonWithIcon{
+    gap: 10px;
+}
+
+/*IconButton*/
+.IconButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/*Outline Button*/
+.OutlineButton,.OutlineButton:active {
+    background-color: transparent;
+    border: 2px solid #1E2757;
+    color: #3F51B5;
+    transition: all 0.3s ease-in-out;
+}
+
+.OutlineButton:hover {
+    background-color: #3F51B5;
+    border: 2px solid #1E2757;
+    box-shadow: 0px 0px 10px rgba(63, 81, 181, 0.5);
+}

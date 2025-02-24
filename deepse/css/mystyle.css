@@ -1,0 +1,47 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    overflow: auto;
+}
+
+.grid-item {
+    position: relative; /* Necesario para posicionar el texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0952fc, #17a2b8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Texto oculto inicialmente */
+.grid-item .overlay-text {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Al salir el cursor de la imagen, se oculta la imagen y aparece el texto */
+.grid-item:hover img {
+    opacity: 0;
+}
+
+.grid-item:hover .overlay-text {
+    opacity: 1;
+}

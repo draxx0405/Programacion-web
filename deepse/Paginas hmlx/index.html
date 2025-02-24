@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo HTMX</title>
+    <!-- Incluir HTMX -->
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+    <h1>Ejemplo de HTMX</h1>
+
+    <!-- Botón que hace una solicitud GET al servidor -->
+    <button hx-get="/mensaje" hx-target="#Mensaje">
+        Obtener mensaje
+    </button> 
+
+    <!-- Área donde se mostrará el resultado -->
+    <div id="Mensaje">
+        Haz clic en el botón para ver el mensaje.
+    </div>
+</body>
+</html>

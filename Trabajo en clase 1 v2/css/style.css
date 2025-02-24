@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos del MenuBar*/
+nav{
+    margin: 20px;
+}
+
+.MenuBar{
+    background: #2196F3;
+    margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    position: relative;
+    
+    -webkit-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
+}
+
+.MenuBar-Item a,.active a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.MenuBar-Item , .active{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    width: 20%;
+    z-index: 9;
+}
+
+.active{
+    background-color: #0f304a;
+}
+
+.slider{
+    left: 0;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    position: absolute;
+    transition: left .4s, background-color .4s;
+    z-index: 8;
+
+}
+
+ul li:nth-child(1):hover,
+ul li:nth-child(1):focus,
+ul li:nth-child(1):active{
+    & ~ .slider{
+        left: 0;
+        background-color: #064375;
+    }
+   
+}
+ul li:nth-child(2):hover,
+ul li:nth-child(2):focus,
+ul li:nth-child(2):active{
+    & ~ .slider{
+        left:20%;
+        background-color: #250759;
+    }
+}
+ul li:nth-child(3):hover,
+ul li:nth-child(3):focus,
+ul li:nth-child(3):active{
+    & ~ .slider{
+        left:40%;
+        background-color: #46064f;
+    }
+}
+ul li:nth-child(4):hover,
+ul li:nth-child(4):focus,
+ul li:nth-child(4):active{
+    & ~ .slider{
+        left:60%;
+        background-color: #29064f;
+    }
+}
+ul li:nth-child(5):hover,
+ul li:nth-child(5):focus,
+ul li:nth-child(5):active{
+    & ~ .slider{
+        left:80%;
+        background-color: #1d064f;
+    }
+}
+
+/*
+estilos body*/
+
