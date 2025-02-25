@@ -45,7 +45,7 @@ box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
 .slider{
     left: 0;
     top: 0;
-    width: 18%;
+    width: 20%;
     height: 100%;
     position: absolute;
     transition: left .4s, background-color .4s;
