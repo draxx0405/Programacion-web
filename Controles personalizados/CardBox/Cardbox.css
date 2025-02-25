@@ -64,6 +64,16 @@ hr{
     transform:  scale(1.05);
 }
 
-.CardBox-Container-Input-Content input:active {
-    transform: scale(0.95);
+
+.rotate-center:hover{
+    animation:rotate-center 0.4s
+} 
+
+@keyframes rotate-center{
+    0%{
+        transform:rotate(0)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
 }

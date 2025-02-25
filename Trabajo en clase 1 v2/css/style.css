@@ -19,8 +19,8 @@ nav{
     position: relative;
     
     -webkit-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
 }
 
 .MenuBar-Item a,.active a {
@@ -50,7 +50,6 @@ box-shadow: 10px 10px 43px 1px rgba(0,0,0,0.75);
     position: absolute;
     transition: left .4s, background-color .4s;
     z-index: 8;
-
 }
 
 ul li:nth-child(1):hover,
@@ -95,6 +94,74 @@ ul li:nth-child(5):active{
     }
 }
 
-/*
-estilos body*/
+/* estilos body */
 
+body{
+    height: 100%;
+    overflow-y: auto;
+    margin: 20px;
+    background-color: #3C5CB1;
+}
+
+img{
+    width:200px ;
+  }
+
+.Main-Content{
+    display: grid;
+    gap: 10px;
+}
+
+.Content-item-Rows{
+    display: grid;
+    gap: 10px;
+}
+
+.Main-Content-item-Title{
+    color:white;
+    width: 100%;
+    background-color: #013241;
+    border-radius: 10px;
+    padding: 5px;
+    justify-items: center;
+}
+
+.Main-Content-item-Content{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.Main-Content-item-Content-img{
+    background-color: #013241;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Main-Content-item-Content-Info{
+    width: 100%;
+    background-color: #013241;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido{
+    color: #0D0D0D;
+    background-color: #899B9F;
+    height: 100%;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    margin: 10px;
+  }
+  
+  h1,h2,h3,p{
+    margin: 15px;
+  }
+  
+  .div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
