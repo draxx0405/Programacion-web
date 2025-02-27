@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\Frontend.css">
+    <link rel="stylesheet" href="..\css\Base de datos.css">
     <title>Frontend</title>
 </head>
 <body>
     <nav>
         <ul class="MenuBar">
             <li class="MenuBar-Item"><a href="index.html">Home</a></li>
-            <li class="active"><a href="Frontend.html">Frontend</a></li>
+            <li class="MenuBar-Item"><a href="Frontend.html">Frontend</a></li>
             <li class="MenuBar-Item"><a href="Backend.html">Backend</a></li>
             <li class="MenuBar-Item"><a href="Estilos.html">Estilos</a></li>
-            <li class="MenuBar-Item"><a href="Base de datos.html">Base de datos</a></li>
+            <li class="active"><a href="Base de datos.html">Base de datos</a></li>
             <li class="slider"></li>
         </ul>
     </nav>
@@ -21,17 +21,18 @@
     <div class="ContenedorPrincipal">
         <div class="ContenedorPrincipal-Contenedores-Hijos">
            <div class="ContenedorPrincipal-Contenedores-Hijos-img">
-             <img src="..\img\React.png" alt="">
+             <img src="..\img\mysql.png" alt="">
            </div>
           
            <div class="RowContenedor">
               <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo">
-               <h1>React</h1>
+               <h1>MySQL</h1>
               </div>
               <div class="ContenedorPrincipal-Contenedores-Hijos-Info">
-               <p>React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de 
-                 facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre.
-                 En el proyecto hay más de mil desarrolladores libres.
+               <p>MySQL es un sistema de gestión de bases de datos relacional (RDBMS) de código abierto, 
+                desarrollado inicialmente por MySQL AB y actualmente mantenido por Oracle Corporation. 
+                Es una de las bases de datos más populares para aplicaciones web y empresariales debido a su rendimiento,
+                 facilidad de uso y compatibilidad con múltiples lenguajes de programación.
                </p>
               </div>
            </div>
@@ -40,40 +41,40 @@
         <div class="ContenedorSecundario">
           
           <div class="RowContenedor">
-            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2>Características de React</h2></div>
+            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2>Características de MySQL</h2></div>
             <div class="ContenedorSecundario-Contenedor-Info">
               <ul>
-                <li><h5>Permite construir interfaces de usuario a partir de componentes individuales</h5></li>
-                <li><h5>Utiliza JSX, una extensión de JavaScript que facilita la creación de componentes</h5></li>
-                <li><h5>Permite añadir interactividad a los componentes</h5></li>
-                <li><h5>Permite combinar componentes escritos por diferentes personas</h5></li>
-                <li><h5>Minimiza los errores que ocurren cuando los desarrolladores construyen interfaces de usuario</h5></li>
+                <li><h5>Modelo Relacional – Organiza los datos en tablas, filas y columnas, asegurando la integridad mediante claves primarias y foráneas.</h5></li>
+                <li><h5>Lenguaje SQL – Usa Structured Query Language (SQL) para consultas, manipulación y administración de datos.</h5></li>
+                <li><h5>Escalabilidad – Puede manejar desde pequeñas aplicaciones hasta sistemas con millones de registros.</h5></li>
+                <li><h5>Alto Rendimiento – Optimizado para lecturas rápidas, con opciones de almacenamiento en memoria y caché.</h5></li>
               </ul> 
             </div>
           </div>
-  
+
           <div class="RowContenedor">
-            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2>Usos de React</h2></div>
+            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2> Ventajas de usar MySQL</h2></div>
             <div class="ContenedorSecundario-Contenedor-Info">
               <ul>
-                <li><h5>Se puede usar para desarrollar aplicaciones web, móviles,de realidad virtual, entre otras</h5></li>
-                <li><h5>Se puede utilizar en conjunto con ReactDOM para desarrollar para la web </h5></li>
-                <li><h5>Se puede utilizar con React Native para desarrollar aplicaciones móviles para iOS y Android</h5></li>
-                <li><h5>Se puede utilizar con React 360 para crear aplicaciones de realidad virtual</h5></li>
+                <li><h5>✔ Gratuito y Open Source (aunque tiene versiones de pago con soporte).</h5></li>
+                <li><h5>✔ Fácil de aprender con una gran comunidad y documentación.</h5></li>
+                <li><h5>✔ Soporte para grandes volúmenes de datos con opciones de replicación y clustering.</h5></li>
+                <li><h5>✔ Compatibilidad con servicios en la nube como AWS RDS, Google Cloud SQL y Azure Database for MySQL.</h5></li>
               </ul>
             </div>
           </div>
-  
+
           <div class="RowContenedor">
-            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2>Ventajas de React</h2></div>
+            <div class="ContenedorPrincipal-Contenedores-Hijos-Titulo"><h2>Desventajas de MySQL</h2></div>
             <div class="ContenedorSecundario-Contenedor-Info">
               <ul>
-                <li><h5>Permite crear interfaces de usuario dinámicas y sin problemas de actualización</h5></li>
-                <li><h5>Permite crear aplicaciones con un rendimiento y una velocidad de carga más rápida que el promedio</h5></li>
-                <li><h5>Permite personalizar la configuración y el código</h5></li>
+                <li><h5>❌ No es ideal para datos no estructurados o grandes sistemas distribuidos (para esto es mejor MongoDB o Cassandra).</h5></li>
+                <li><h5>❌ Menos eficiente en transacciones muy complejas comparado con PostgreSQL.</h5></li>
+                <li><h5>❌ Algunas funciones avanzadas son exclusivas de la versión de pago MySQL Enterprise.</h5></li>
               </ul>
             </div>
-          </div>
+          </div>          
+        
         </div>
       </div>
   

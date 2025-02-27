@@ -202,3 +202,7 @@ img{
 .ContenedorSecundario-Contenedor-Info h5{
     display: inline;
 }
+
+.RowContenedor li{
+    list-style: none;
+}
